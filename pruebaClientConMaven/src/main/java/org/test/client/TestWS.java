@@ -17,7 +17,7 @@ import com.qoppa.pdfSecure.PDFSecure;
 
 public class TestWS {
 	public static void main(String[] args) throws Exception {
-		EnvioDocService ws = new EnvioDocService(new URL("http://localhost:8080/post/EnvioDoc"));
+		EnvioDocService ws = new EnvioDocService(new URL("http://localhost:8080/pruebaConMaven/EnvioDoc"));
 		EnvioDoc wsPort = ws.getEnvioDocPort();
 //        BindingProvider bp = (BindingProvider) wsPort;
 //        List<Handler> handlers = new ArrayList<Handler>();

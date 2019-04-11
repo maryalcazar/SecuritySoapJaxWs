@@ -1,5 +1,5 @@
 
-package com.atlante.bmb.post.web_services.test;
+package org.test;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

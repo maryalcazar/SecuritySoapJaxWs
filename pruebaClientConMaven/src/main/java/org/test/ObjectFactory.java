@@ -1,5 +1,5 @@
 
-package com.atlante.bmb.post.web_services.test;
+package org.test;
 
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlElementDecl;
@@ -10,7 +10,7 @@ import javax.xml.namespace.QName;
 /**
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
- * generated in the com.atlante.bmb.post.web_services.test package. 
+ * generated in the org.test package. 
  * <p>An ObjectFactory allows you to programatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
@@ -24,12 +24,12 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _GetValor_QNAME = new QName("http://test.web_services.post.bmb.atlante.com/", "getValor");
-    private final static QName _GetValorResponse_QNAME = new QName("http://test.web_services.post.bmb.atlante.com/", "getValorResponse");
+    private final static QName _GetValorResponse_QNAME = new QName("http://test.org/", "getValorResponse");
+    private final static QName _GetValor_QNAME = new QName("http://test.org/", "getValor");
     private final static QName _GetValorResponseReturn_QNAME = new QName("", "return");
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.atlante.bmb.post.web_services.test
+     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: org.test
      * 
      */
     public ObjectFactory() {
@@ -52,21 +52,21 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetValor }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://test.web_services.post.bmb.atlante.com/", name = "getValor")
-    public JAXBElement<GetValor> createGetValor(GetValor value) {
-        return new JAXBElement<GetValor>(_GetValor_QNAME, GetValor.class, null, value);
-    }
-
-    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetValorResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://test.web_services.post.bmb.atlante.com/", name = "getValorResponse")
+    @XmlElementDecl(namespace = "http://test.org/", name = "getValorResponse")
     public JAXBElement<GetValorResponse> createGetValorResponse(GetValorResponse value) {
         return new JAXBElement<GetValorResponse>(_GetValorResponse_QNAME, GetValorResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetValor }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://test.org/", name = "getValor")
+    public JAXBElement<GetValor> createGetValor(GetValor value) {
+        return new JAXBElement<GetValor>(_GetValor_QNAME, GetValor.class, null, value);
     }
 
     /**

@@ -1,5 +1,5 @@
 
-package com.atlante.bmb.post.web_services.test;
+package org.test;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -19,21 +19,21 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "EnvioDocService", targetNamespace = "http://test.web_services.post.bmb.atlante.com/", wsdlLocation = "file:/C:/Users/mdalcazar/Desktop/EnvioDoc.wsdl")
 @HandlerChain(file = "client-handlers.xml")
+@WebServiceClient(name = "EnvioDocService", targetNamespace = "http://test.org/", wsdlLocation = "http://localhost:8080/ws/server/EnvioDoc?wsdl")
 public class EnvioDocService
     extends Service
 {
 
     private final static URL ENVIODOCSERVICE_WSDL_LOCATION;
     private final static WebServiceException ENVIODOCSERVICE_EXCEPTION;
-    private final static QName ENVIODOCSERVICE_QNAME = new QName("http://test.web_services.post.bmb.atlante.com/", "EnvioDocService");
+    private final static QName ENVIODOCSERVICE_QNAME = new QName("http://test.org/", "EnvioDocService");
 
     static {
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("file:/C:/Users/mdalcazar/Desktop/EnvioDoc.wsdl");
+            url = new URL("http://localhost:8080/ws/server/EnvioDoc?wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }
@@ -72,7 +72,7 @@ public class EnvioDocService
      */
     @WebEndpoint(name = "EnvioDocPort")
     public EnvioDoc getEnvioDocPort() {
-        return super.getPort(new QName("http://test.web_services.post.bmb.atlante.com/", "EnvioDocPort"), EnvioDoc.class);
+        return super.getPort(new QName("http://test.org/", "EnvioDocPort"), EnvioDoc.class);
     }
 
     /**
@@ -84,7 +84,7 @@ public class EnvioDocService
      */
     @WebEndpoint(name = "EnvioDocPort")
     public EnvioDoc getEnvioDocPort(WebServiceFeature... features) {
-        return super.getPort(new QName("http://test.web_services.post.bmb.atlante.com/", "EnvioDocPort"), EnvioDoc.class, features);
+        return super.getPort(new QName("http://test.org/", "EnvioDocPort"), EnvioDoc.class, features);
     }
 
     private static URL __getWsdlLocation() {
